@@ -15,7 +15,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '29414758'))
 API_HASH = environ.get('API_HASH', '8cd9e6113ed53dd8767cb760d4535bd1')
-BOT_TOKEN = environ.get('BOT_TOKEN', "7376977920:AAH5yvsHpCYjOaegUsYtfWq5O9qavvHD5dc")
+BOT_TOKEN = environ.get('BOT_TOKEN', "")
 REACTIONS = [
     "🔥", "❤️", "😍", "⚡", "😇",
     "🤩", "🎉", "🤗", "🤩", "😎",
@@ -60,7 +60,7 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
-VERIFY = bool(environ.get('VERIFY', False))
+VERIFY = bool(environ.get('VERIFY', True))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'shortxlinks.com')
 SHORTLINK_API = environ.get('SHORTLINK_API', '0a22b1410bbaee7099f2de7e82d1201e8389c1a6')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
